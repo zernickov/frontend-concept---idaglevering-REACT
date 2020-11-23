@@ -1,38 +1,350 @@
 .App {
+  font-family: Quicksand;
+}
+
+.top-bar {
+  height: 30px;
+  background: #5AC0AA;
+}
+
+.black-text {
+  color: #3F3E3E;
+}
+
+
+.top-logo {
+  padding-top: 40px;
+  width: 270px;
+  margin-top: 70px;
+}
+
+.left-column {
+  margin-left: 100px;
+}
+
+.logo-header {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.form-header {
+  font-weight: bolder;
+  font-size: 35px;
+  padding-top: 40px;
+}
+
+.need-help-header {
+  font-weight: bolder;
+  font-size: 35px;
+  padding-top: 12px;
+}
+
+.link {
+  color: #5AC0AA;
+  text-decoration: underline;
+}
+
+.choice-button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: #5AC0AA;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.choice-button:hover {
+
+  margin-top: 15px;
+  padding-bottom: 15px;
+  margin-left: -4px;
+  box-shadow: 5px 10px 8px 4px #C1C1C1;
+}
+
+.continue-to-list-button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: #5AC0AA;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.continue-to-list-button:hover {
+
+  margin-top: 5px;
+  padding-bottom: 15px;
+  margin-left: -4px;
+  box-shadow: 5px 10px 8px 4px #C1C1C1;
+}
+
+.name-input {
+  width: 50%;
+  padding: 8px;
+  color: #3F3E3E;
+  border: 3px solid #C1C1C1;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-input {
+  width: 100%;
+  padding: 8px;
+  color: #3F3E3E;
+  border: 3px solid #C1C1C1;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-input {
+  width: 80%;
+  padding: 8px;
+  color: #3F3E3E;
+  border: 3px solid #C1C1C1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-button {
+  width: 20%;
+  padding: 11px;
   color: white;
+  background: #5AC0AA;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:hover {
+  padding-left: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.all-buttons:focus {
+  outline: none;
 }
+
+.faq-button {
+  width: 70%;
+  padding: 10px;
+  color: white;
+  background: #C1C1C1;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  transition: 0.2s;
+}
+
+.faq-button:hover {
+  margin-top: 35px;
+  padding-bottom: 15px;
+  box-shadow: 5px 10px 8px 4px #DDDBDB;
+}
+
+.back-button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: #C1C1C1;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  margin-top: 35px;
+  padding-bottom: 15px;
+  box-shadow: 5px 10px 8px 4px #DDDBDB;
+}
+
+.faq-text-box {
+  background-color: #F7F7F7;
+  margin-top: 50px;
+  width: 350px;
+  height: 380px;
+  overflow-y: scroll;
+  color: #3F3E3E;
+  border-radius: 30px;
+  border: 5px solid #5AC0AA;
+  padding: 10px;
+  box-shadow: 20px 10px 8px 4px #DDDBDB;
+  font-weight: bolder;
+}
+
+.faq-text-box::-webkit-scrollbar {
+  display: none;
+}
+
+.exit-faq-button {
+  border: none;
+  background: #5AC0AA;
+  border-radius: 50%;
+  width: 28px;
+  font-weight: bolder;
+  color: white;
+  margin-left: auto;
+  font-size: 18px;
+  display: block;
+  transition: 0.2s;
+}
+
+.exit-faq-button:hover {
+  margin-top: -3px;
+  margin-right: 3px;
+  box-shadow: 5px 6px 5px 1px #C1C1C1;
+}
+
+.condition-text {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.need-help-text {
+  font-weight: bolder;
+  font-size: 18px;
+
+}
+
+.want-help-text {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.green-circle {
+  background: white;
+  border: 30px solid #5AC0AA;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  margin-left: -260px;
+  margin-top: -130px;
+}
+
+.bottom-section {
+  background: #F7F7F7;
+  height: 230px;
+  border-top-right-radius: 60%;
+  border-top-left-radius: 60%;
+  margin-top: 100px;
+}
+
+.clean-icon {
+  width: 80px;
+}
+
+.cough-icon {
+  width: 50px;
+}
+
+.wash-icon {
+  width: 50px;
+}
+
+.handshake-icon {
+  width: 80px;
+}
+
+.distance-icon {
+  width: 70px;
+}
+
+.corona-header {
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.collab-text {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #C1C1C1;
+}
+
+.first-socialmedia {
+  margin-left: 90px;
+}
+
+.socialmedia-icon {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+  transition: 0.2s;
+}
+
+.socialmedia-icon:hover {
+  width: 55px;
+  height: 55px;
+  margin-top: -10px;
+  margin-left: -2px;
+  box-shadow: 5px 10px 4px 3px #C1C1C1;
+}
+
+.corona-text {
+  color: #C1C1C1;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.faq-animate-enter {
+  opacity: 0;
+}
+.faq-animate-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.faq-animate-exit {
+  opacity: 1;
+}
+.faq-animate-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
